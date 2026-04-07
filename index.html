@@ -1,19 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Jaiswal Mobile Shopee</title>
 
-<link rel="stylesheet" href="style.css">
-
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+background:#0f172a;
+color:white;
+font-family:Segoe UI;
+scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+
+.navbar{
+background:#020617;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#020617,#1e293b);
+}
+
+.hero h1{
+font-size:60px;
+font-weight:bold;
+}
+
+.hero button{
+background:linear-gradient(45deg,#22c55e,#38bdf8);
+border:none;
+padding:15px 30px;
+border-radius:30px;
+color:white;
+font-size:18px;
+margin-top:20px;
+}
+
+/* SECTION TITLE */
+
+.section-title{
+text-align:center;
+margin:60px 0 40px;
+}
+
+/* PHONE CARDS */
+
+.phone-card{
+background:#1e293b;
+border-radius:20px;
+padding:20px;
+text-align:center;
+transition:0.4s;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+.phone-card img{
+width:100%;
+border-radius:15px;
+}
+
+.phone-card:hover{
+transform:rotateY(10deg) scale(1.05);
+}
+
+/* FEATURES */
+
+.feature-box{
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+}
+
+/* ACCESSORIES */
+
+.accessory{
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+text-align:center;
+transition:0.3s;
+}
+
+.accessory:hover{
+background:#38bdf8;
+transform:scale(1.1);
+}
+
+/* OFFER */
+
+.offer{
+background:linear-gradient(45deg,#22c55e,#38bdf8);
+padding:50px;
+text-align:center;
+font-size:22px;
+margin:80px 0;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+</style>
 
 </head>
 
 <body>
 
-<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark">
 
 <div class="container">
 
@@ -21,15 +142,10 @@
 
 <ul class="navbar-nav ms-auto">
 
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-
-<li class="nav-item"><a class="nav-link" href="phones.html">Phones</a></li>
-
-<li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
-
-<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#phones">Phones</a></li>
+<li class="nav-item"><a class="nav-link" href="#accessories">Accessories</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 
 </ul>
 
@@ -37,45 +153,152 @@
 
 </nav>
 
-<section class="hero">
+<!-- HERO -->
 
-<h1>Official OPPO Dealer</h1>
+<section id="home" class="hero">
 
-<p>Best Smartphones in Nipani</p>
+<h1>Best Smartphones in Nipani</h1>
 
-<a href="phones.html" class="btn btn-success btn-lg">
-Explore Phones
+<p>Official OPPO Dealer • Latest Phones • Accessories</p>
+
+<a href="#phones">
+
+<button>Explore Phones</button>
+
 </a>
 
-<div class="floating-phone">
+</section>
 
-<img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97">
+<!-- NEW RELEASES -->
+
+<section id="phones" class="container">
+
+<h2 class="section-title">🔥 New Releases</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="phone-card">
+
+<img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb">
+
+<h4 class="mt-3">OPPO Reno 11</h4>
+
+<p>108MP Camera • 12GB RAM • 5G</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="phone-card">
+
+<img src="https://images.unsplash.com/photo-1580910051074-3eb694886505">
+
+<h4 class="mt-3">OPPO A79</h4>
+
+<p>5000mAh Battery • Fast Charging</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="phone-card">
+
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+
+<h4 class="mt-3">Samsung Galaxy</h4>
+
+<p>Flagship Android Phone</p>
+
+</div>
+
+</div>
 
 </div>
 
 </section>
 
-<section class="container py-5 text-center">
+<!-- PHONE FEATURES -->
 
-<h2>Popular Brands</h2>
+<section class="container mt-5">
 
-<div class="brand-slider">
+<h2 class="section-title">OPPO Reno 11 Specifications</h2>
 
-<div>OPPO</div>
+<div class="row g-4">
 
-<div>Samsung</div>
+<div class="col-md-6">
 
-<div>Vivo</div>
+<img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb" width="100%">
 
-<div>Realme</div>
+</div>
 
-<div>Redmi</div>
+<div class="col-md-6">
+
+<div class="feature-box">
+
+<ul>
+
+<li>108MP Camera</li>
+<li>5000mAh Battery</li>
+<li>6.7" AMOLED Display</li>
+<li>Snapdragon Processor</li>
+<li>12GB RAM</li>
+<li>256GB Storage</li>
+<li>5G Network</li>
+
+</ul>
+
+</div>
+
+</div>
 
 </div>
 
 </section>
 
-<script src="script.js"></script>
+<!-- OFFER -->
+
+<section class="offer">
+
+🎉 Free Screen Guard with Every OPPO Purchase
+
+</section>
+
+<!-- ACCESSORIES -->
+
+<section id="accessories" class="container">
+
+<h2 class="section-title">Mobile Accessories</h2>
+
+<div class="row g-4">
+
+<div class="col-md-3"><div class="accessory">Fast Chargers</div></div>
+<div class="col-md-3"><div class="accessory">Wireless Earbuds</div></div>
+<div class="col-md-3"><div class="accessory">Phone Covers</div></div>
+<div class="col-md-3"><div class="accessory">Tempered Glass</div></div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="container text-center mt-5 mb-5">
+
+<h2>Contact Us</h2>
+
+<p>Nipani, Karnataka</p>
+
+<p>Phone: +91 98765 43210</p>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/919876543210">WhatsApp</a>
 
 </body>
 
