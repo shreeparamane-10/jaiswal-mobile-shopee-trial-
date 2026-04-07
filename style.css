@@ -1,161 +1,41 @@
 body{
-
-font-family:Arial;
-
-background:#f5f5f5;
-
-margin:0;
-
+background:#0f172a;
+color:white;
+font-family: 'Segoe UI', sans-serif;
 }
 
-/* HERO */
+/* Navbar */
+
+.navbar{
+background:#020617;
+border-bottom:2px solid #38bdf8;
+}
+
+/* Hero */
 
 .hero{
-
 height:90vh;
-
-background:linear-gradient(120deg,#00b140,#003d1f);
-
-color:white;
-
+background:linear-gradient(135deg,#020617,#1e293b);
 display:flex;
-
 flex-direction:column;
-
 justify-content:center;
-
 align-items:center;
-
 text-align:center;
-
 }
 
-/* FLOATING PHONE */
+/* Buttons */
 
-.floating-phone img{
-
-width:220px;
-
-margin-top:30px;
-
-animation:float 4s infinite ease-in-out;
-
-}
-
-@keyframes float{
-
-0%{transform:translateY(0)}
-
-50%{transform:translateY(-20px)}
-
-100%{transform:translateY(0)}
-
-}
-
-/* BRAND SLIDER */
-
-.brand-slider{
-
-display:flex;
-
-gap:40px;
-
-justify-content:center;
-
-font-size:24px;
-
-animation:slide 10s infinite linear;
-
-}
-
-@keyframes slide{
-
-0%{transform:translateX(0)}
-
-50%{transform:translateX(-50px)}
-
-100%{transform:translateX(0)}
-
-}
-
-/* GRID */
-
-.grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-gap:30px;
-
-padding:40px;
-
-}
-
-/* PHONE CARD */
-
-.phone-card{
-
-background:white;
-
-padding:20px;
-
-border-radius:15px;
-
-text-align:center;
-
-transition:0.4s;
-
-box-shadow:0 10px 20px rgba(0,0,0,0.1);
-
-}
-
-.phone-card:hover{
-
-transform:rotateY(15deg) scale(1.05);
-
-}
-
-/* ACCESSORIES */
-
-.accessory{
-
-background:white;
-
-padding:40px;
-
-text-align:center;
-
-font-size:20px;
-
-border-radius:15px;
-
-transition:0.3s;
-
-}
-
-.accessory:hover{
-
-background:#00b140;
-
-color:white;
-
-transform:scale(1.1);
-
-}
-
-/* WHATSAPP */
-
-.whatsapp{
-
-background:#25D366;
-
-padding:12px 20px;
-
+.btn-main{
+background:linear-gradient(45deg,#22c55e,#38bdf8);
+border:none;
+padding:12px 25px;
 border-radius:30px;
-
 color:white;
+font-weight:bold;
+transition:0.3s;
+}
 
-text-decoration:none;
-
+.btn-main:hover{
+transform:scale(1.1);
+box-shadow:0 0 20px #38bdf8;
 }
