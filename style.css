@@ -36,6 +36,33 @@ box-shadow:0 10px 25px rgba(0,0,0,0.1);
 transition:0.3s;
 }
 
+.products{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+padding:40px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.card img{
+width:200px;
+height:200px;
+object-fit:contain;
+}
+
+nav a{
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
 .product-card:hover{
 transform:translateY(-8px);
 }
